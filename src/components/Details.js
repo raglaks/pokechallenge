@@ -17,7 +17,7 @@ class Details extends Component {
 
         return(
 
-            <Grid item>
+            <Grid item className='center'>
             <h3 className='upper'>{this.props.data.name}</h3>
             <img id={this.props.id} src={this.props.data.sprite} alt={this.props.data.name}></img>
             <p className='upper'>Type(s): {this.props.data.type.map(el=>el,)}</p>
