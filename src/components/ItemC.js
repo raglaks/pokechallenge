@@ -11,11 +11,27 @@ class ItemC extends Component {
 
     }
 
+    // mouseIn(e){
+
+    //     e.preventDefault();
+
+    //     this.setState({style: maxWidth: 200%})
+
+    // }
+
+    // mouseOut(e){
+
+    //     e.preventDefault();
+
+    // }
+
     render() {
+
+        //console.log(this.props);
 
         return(
 
-            <h1 text-align='center'>Pokedex</h1>
+            <Grid item><img id={this.props.id} src={this.props.data.sprite} alt={this.props.data.name} onClick={this.props.click}></img></Grid>
 
         )
 

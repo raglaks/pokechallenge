@@ -36,14 +36,6 @@ class GridC extends Component {
 
     }
 
-    // componentDidUpdate(){
-
-    //     console.log('update');
-
-    //     console.log(this.state);
-
-    // }
-
     checkArrs(arr){
 
         //map through and build new array with ids
@@ -88,6 +80,25 @@ class GridC extends Component {
 
     }
 
+    handleClick = event => {
+
+        event.preventDefault();
+    
+        let click = event.target;
+
+        console.log(click);
+    
+        //this.updateState(click);
+    };
+
+    updateState(click) {
+
+        this.setState({id: click});
+
+        console.log('state updated bec of click', this.state.id);
+
+    }
+
     render() {
 
         let rend;
@@ -104,8 +115,7 @@ class GridC extends Component {
 
                     rows = this.state.full.map((el, key)=>{
 
-                        return <Grid item>
-                        <img src={el.sprite} alt={el.name}></img></Grid>;
+                        return <ItemC data={el} click={this.handleClick} id={key}/>
 
                     });
 
