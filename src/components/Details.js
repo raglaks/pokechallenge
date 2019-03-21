@@ -25,7 +25,7 @@ class Details extends Component {
 
             <Grid item className='center'>
                 <h3 className='upper'>{this.props.data.name}</h3>
-                <img id={this.props.id} src={this.props.data.sprite} alt={this.props.data.name}></img>
+                <img id='resize' src={this.props.data.sprite} alt={this.props.data.name}></img>
                 <p className='upper'>Type(s): {types}</p>
                 <p>Experience: {this.props.data.exp}</p>
                 <p>Height: {this.props.data.height}</p>
