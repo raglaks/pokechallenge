@@ -25,7 +25,7 @@ class Details extends Component {
             <p>Height: {this.props.data.height}</p>
             <p>Weight: {this.props.data.weight}</p>
 
-            <button id='close' onClick={this.props.data.click} class="btn">
+            <button id='close' onClick={this.props.click} className="btn">
                     Close 
             </button>
             
