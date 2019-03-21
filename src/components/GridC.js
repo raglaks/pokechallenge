@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import ItemC from './ItemC';
+import Details from './Details';
 import axios from 'axios';
 
 class GridC extends Component { 
@@ -35,6 +36,12 @@ class GridC extends Component {
         });
 
     }
+
+    // componentDidUpdate(){
+
+    //     console.log('state updated', this.state);
+
+    // }
 
     checkArrs(arr){
 
@@ -84,20 +91,10 @@ class GridC extends Component {
 
         event.preventDefault();
     
-        let click = event.target;
+        let click = parseInt(event.target.id);
 
-        console.log(click);
-    
-        //this.updateState(click);
+        this.setState({yes: click});
     };
-
-    updateState(click) {
-
-        this.setState({id: click});
-
-        console.log('state updated bec of click', this.state.id);
-
-    }
 
     render() {
 
@@ -113,17 +110,31 @@ class GridC extends Component {
 
                 if(this.state.full.length === len) {
 
-                    rows = this.state.full.map((el, key)=>{
+                    if (this.state.yes) {
 
-                        return <ItemC data={el} click={this.handleClick} id={key}/>
+                        let chosen = this.state.yes;
 
-                    });
+                        let info = this.state.full[chosen];
 
-                    rend = <Grid container justify={'center'} spacing={24}>
+                        rend = <Grid container justify={'center'} spacing={24}>
+                                <Details data={info} />
+                            </Grid>
+
+                    } else {
+
+                        rows = this.state.full.map((el, key)=>{
+
+                            return <ItemC data={el} click={this.handleClick} id={key}/>
     
-                            {rows}
+                        });
+    
+                        rend = <Grid container justify={'center'} spacing={24}>
+        
+                                {rows}
+    
+                            </Grid>
 
-                        </Grid>
+                    }
 
                 }
 
@@ -131,7 +142,7 @@ class GridC extends Component {
 
         } else {
 
-            rend = <h1 className='center'>loading</h1>;
+            rend = <h2 className='center'>loading</h2>;
 
         }
 

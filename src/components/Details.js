@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 
-class ItemC extends Component { 
+class Details extends Component { 
 
     constructor(props) {
 
@@ -17,21 +17,9 @@ class ItemC extends Component {
 
     // }
 
-    // mouseIn(e){
-
-    //     e.preventDefault();
-
-    //     this.setState({style: maxWidth: 200%})
-
-    // }
-
-    // mouseOut(e){
-
-    //     e.preventDefault();
-
-    // }
-
     render() {
+
+        console.log(this.props);
 
         return(
 
@@ -43,4 +31,4 @@ class ItemC extends Component {
 
 }
 
-export default ItemC;
+export default Details;
