@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Grid from '@material-ui/core/Grid';
 
-class Head extends Component { 
+class ItemC extends Component { 
 
     constructor(props) {
 
@@ -14,7 +15,7 @@ class Head extends Component {
 
         return(
 
-            <h1 className='center'>Pokedex</h1>
+            <h1 text-align='center'>Pokedex</h1>
 
         )
 
@@ -22,4 +23,4 @@ class Head extends Component {
 
 }
 
-export default Head;
+export default ItemC;
