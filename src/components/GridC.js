@@ -37,12 +37,6 @@ class GridC extends Component {
 
     }
 
-    // componentDidUpdate(){
-
-    //     console.log('state updated', this.state);
-
-    // }
-
     checkArrs(arr){
 
         //map through and build new array with ids
