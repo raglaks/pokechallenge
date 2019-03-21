@@ -1,0 +1,2 @@
+body{background:#fad61d;font-family:Cambria}.center{text-align:center}.upper{text-transform:capitalize}#pokeball{height:30px;width:30px;-webkit-animation:pokeball 1s linear infinite;animation:pokeball 1s linear infinite}@-webkit-keyframes pokeball{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes pokeball{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/*# sourceMappingURL=main.9bd3459f.chunk.css.map */
