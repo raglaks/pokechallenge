@@ -1,6 +1,6 @@
 # Pokedex (for a technical test)
 
-## A React app built to apply for a front-end React developer position
+## A React app built to apply for a front-end developer position
 
 I built this React App to apply for a front-end React developer position. Initially, I didn't think much of it because of the straightforward instructions: to build a visual component for the public Pokemon API. But, soon after, I was instructed that I would only be given two hours to complete the challenge and that's when I started to realize the task's difficulty.
 
