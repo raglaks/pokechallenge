@@ -5,3 +5,23 @@
 .upper {
   text-transform: capitalize;
   }
+
+#pokeball {
+
+  height: 30px;
+  width: 30px;
+
+}
+
+#pokeball {
+  animation: pokeball infinite 1s linear;
+}
+
+@keyframes pokeball {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

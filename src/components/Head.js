@@ -12,10 +12,10 @@ class Head extends Component {
 
     render() {
 
-        return(
+        return(   
 
-            <h1 className='center'>Pokedex</h1>
-
+                <h1 className='center'>Pokedex  <img id='pokeball' src='https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG' alt='pokeball'></img></h1>
+            
         )
 
     }
