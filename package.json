@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
@@ -24,5 +25,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "homepage": "https://raglaks.github.io/pokechallenge/",
   "devDependencies": {}
 }
