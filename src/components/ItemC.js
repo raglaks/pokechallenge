@@ -11,26 +11,6 @@ class ItemC extends Component {
 
     }
 
-    // componentDidMount() {
-
-    //     this.setState({data: this.props.data});
-
-    // }
-
-    // mouseIn(e){
-
-    //     e.preventDefault();
-
-    //     this.setState({style: maxWidth: 200%})
-
-    // }
-
-    // mouseOut(e){
-
-    //     e.preventDefault();
-
-    // }
-
     render() {
 
         return(

@@ -93,6 +93,12 @@ class GridC extends Component {
     
         let click = parseInt(event.target.id);
 
+        if (click === 'closed') {
+
+            this.setState({})
+
+        }
+
         this.setState({yes: click});
     };
 
@@ -117,7 +123,7 @@ class GridC extends Component {
                         let info = this.state.full[chosen];
 
                         rend = <Grid container justify={'center'} spacing={24}>
-                                <Details data={info} />
+                                <Details data={info} click={this.handleClick}/>
                             </Grid>
 
                     } else {
