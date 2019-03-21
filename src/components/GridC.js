@@ -93,13 +93,20 @@ class GridC extends Component {
     
         let click = parseInt(event.target.id);
 
+        console.log(click);
+
         if (click === 'closed') {
 
-            this.setState({})
+            delete this.state.yes;
+
+            this.setState(this.state);
+
+        } else {
+
+            this.setState({yes: click});
 
         }
-
-        this.setState({yes: click});
+        
     };
 
     render() {
